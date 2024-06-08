@@ -1,0 +1,11 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float no = 76.73;
+    cout << "the floating no is : " << no << endl;
+
+    return 0;
+}
