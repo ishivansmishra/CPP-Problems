@@ -1,0 +1,14 @@
+#include<iostream>
+
+using namespace std;
+
+int main (){
+  
+   bool blt=true;
+   cout<<blt<<endl;
+   bool blf=false;
+   cout<<blf<<endl;
+   
+
+    return 0;
+}
