@@ -1,0 +1,27 @@
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int main()
+{
+  int a;
+  cout << "Enter The Value of First number : " << endl;
+  cin >> a;
+
+  int b;
+  cout << "Enter the Value of Second Number : " << endl;
+  cin >> b;
+
+  cout << "The Addition of number is  : " << a + b << endl;
+  cout << "The subtraction of number is : " << a - b << endl;
+  cout << "The multiplaction of the number is : " << a * b << endl;
+  cout << "The Divison of the number is : " << a / b << endl;
+  cout << "The Remainder of the number is : " << a % b << endl;
+  cout << "The pre-increment of the number : " << ++a << endl;
+  cout << "The pre-decrement of the number is : " << --a << endl;
+  cout << "The post-increment of the number is : " << a++ << endl;
+  cout << "The post-decrement of the number is : " << a-- << endl;
+
+  return 0;
+}
