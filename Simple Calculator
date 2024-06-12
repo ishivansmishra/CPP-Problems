@@ -1,0 +1,47 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+  long int no1;
+  cout << "Enter The First Number : " << endl;
+  cin >> no1;
+
+  long int no2;
+  cout << "Enter The Second Number : " << endl;
+  cin >> no2;
+  char op; // operator
+  cout << "Enter The operatot(+,-,*,/) : ";
+  cin >> op;
+
+  switch (op)
+  {
+  case '+':
+    cout << "The Addition of The number is : " << no1 + no2 << endl;
+    break;
+
+  case '-':
+    cout << "The Subtraction of The Number is : " << no1 - no2 << endl;
+    break;
+
+  case '*':
+    cout << "The Multiplication of The number is : " << no1 * no2 << endl;
+    break;
+
+  case '/':
+    if (no2 != 0)
+    {
+      cout << "The Divison of number is : " << no1 / no2 << endl;
+      break;
+    }
+    else
+    {
+      cout << "The no 2 is zero so the value is infinite" << endl;
+    }
+
+  default:
+    cout << "The operator is invalid please enter the valid operator" << endl;
+    break;
+  }
+}
