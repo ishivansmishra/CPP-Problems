@@ -1,0 +1,15 @@
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int main()
+{
+    double no;
+    cout << "Enter The NO : " << endl;
+    cin >> no;
+
+    cout << "After typecasting the number is : " << (int)no << endl;
+
+    return 0;
+}
