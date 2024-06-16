@@ -1,0 +1,31 @@
+#include <iostream>
+#include <iomanip>
+#include <cctype>
+
+using namespace std;
+
+int main()
+{
+    char character;
+    cout << "Enter The Character : " << endl;
+    cin >> character;
+
+    if (islower(character))
+    {
+        cout << character << " is a Lowercase" << endl;
+    }
+    else if (isdigit(character))
+    {
+        cout << character << " is a Number " << endl;
+    }
+    else if (isupper(character))
+    {
+        cout << character << " is a Uppercase" << endl;
+    }
+    else
+    {
+        cout << character << " is neither,lowercase,uppercase nor number please enter a correct character" << endl;
+    }
+
+    return 0;
+}
