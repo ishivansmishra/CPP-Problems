@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n;
+    cout << "Enter the number: ";
+    cin >> n;
+
+    // Outer loop for rows
+    for (int i = 1; i <= n; i++)
+    {
+        // Inner loop for columns
+        for (int j = 1; j <= n; j++)
+        {
+            // Calculate the character based on the current row number
+            char ch = 'A' + i - 1;
+            cout << ch;
+        }
+        // Move to the next line after printing each row
+        cout << endl;
+    }
+
+    return 0;
+}
