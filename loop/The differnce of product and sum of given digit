@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+  int n;
+  cout << "Enter The Number : " << endl;
+  cin >> n;
+
+  int sum = 0;
+  int sub = 0;
+  int product = 1;
+
+  while (n != 0)
+  {
+    int digit = n % 10;
+    n = n / 10;
+    sum += digit;
+    product *= digit;
+
+    sub = product - sum;
+  }
+  cout << "The Subtraction Of " << product << " and " << sum << " is " << sub;
+
+  return 0;
+}
