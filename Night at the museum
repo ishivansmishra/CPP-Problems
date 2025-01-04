@@ -1,0 +1,36 @@
+#include<iostream>
+#include<vector>
+#include<algorithm>
+#include<cctype>
+
+
+using namespace std;
+
+
+
+int main (){
+    string s;
+    cin>>s;
+
+
+      int current = 'a';
+    int total = 0;
+
+
+    for(auto ch : s){
+   int clock = abs(current - ch);
+   int anti = 26 - clock;
+      total += min(clock,anti);
+     current = ch;
+
+        
+    }
+
+    cout<<total;
+
+  
+
+
+    return 0;
+}
+
